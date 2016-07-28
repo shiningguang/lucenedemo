@@ -28,7 +28,7 @@ import java.nio.file.Paths;
  */
 public class HelloLucene {
 
-    private static final String FILE_DIR = "/opt/lucene/";
+    public static final String FILE_DIR = "/opt/lucene/";
 
 
     public void index(){
