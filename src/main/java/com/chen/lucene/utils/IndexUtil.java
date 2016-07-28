@@ -52,15 +52,15 @@ public class IndexUtil {
 
     }
 
-    private  IndexSearcher getSearcher(){
-        if (reader == null){
-            IndexReader ir = DirectoryReader.openIfChanged(reader);
-            if(ir != null){
-                reader = ir;
-
-            }
-        }
-    }
+//    private  IndexSearcher getSearcher(){
+//        if (reader == null){
+//            IndexReader ir = DirectoryReader.openIfChanged(reader);
+//            if(ir != null){
+//                reader = ir;
+//
+//            }
+//        }
+//    }
 
 
     public void deleteAll(){
