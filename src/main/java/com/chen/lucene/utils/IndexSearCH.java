@@ -5,7 +5,6 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.*;
 import org.apache.lucene.index.*;
-import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -17,7 +16,7 @@ import java.nio.file.Paths;
  * Date ： 16/7/27
  * Time : 下午11:41
  */
-public class IndexUtil {
+public class IndexSearCH {
 
     private String[] ids = {"1","2","3"};
 
@@ -33,16 +32,16 @@ public class IndexUtil {
 
     private IndexReader reader = null;
 
-    private IndexSearcher searcher = null;
+    private org.apache.lucene.search.IndexSearcher searcher = null;
 
     private DirectoryReader directoryReader = null;
 
 
-    public IndexUtil(){
+    public IndexSearCH(IndexReader reader){
         try {
             directory = FSDirectory.open(Paths.get(HelloLucene.FILE_DIR));
 
-            reader = DirectoryReader.open(directory);
+            this.reader = DirectoryReader.open(directory);
 
 
         } catch (IOException e) {
@@ -50,7 +49,6 @@ public class IndexUtil {
         }
 
     }
-
 
 
     public void deleteAll(){

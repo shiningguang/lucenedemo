@@ -58,4 +58,15 @@ IndexReader 和 IndexWriter 开关很消耗时间和资源
 
 建议是在writer 进行删除。
 
+在关于数据设计中有一个acid属性。
+![acid解释](image/acid.png)
+![数据库结构图](image/RMDB.png)
+![英文解释](image/enrmdb.png)
+
+
+在可读可写中，reader 在读的时候需要把writer写进去的都读出来。
+
+
+reader在lucene5中只做读数据操作。
+
 

@@ -1,0 +1,5 @@
+<root>
+  <item name='org.apache.lucene.index.DirectoryReader org.apache.lucene.index.DirectoryReader openIfChanged(org.apache.lucene.index.DirectoryReader)'>
+    <annotation name='java.lang.annotation.Deprecated'/>
+  </item>
+</root>
